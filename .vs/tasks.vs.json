@@ -1,0 +1,15 @@
+{
+  "version": "0.2.1",
+  "tasks": [
+    {
+      "taskLabel": "工作-委派與事件",
+      "appliesTo": "A基本與進階觀念/A基本觀念/委派與事件.cs",
+      "type": "launch"
+    },
+    {
+      "taskLabel": "工作-委派與事件",
+      "appliesTo": "A基本與進階觀念/A基本觀念/委派與事件.cs",
+      "type": "launch"
+    }
+  ]
+}

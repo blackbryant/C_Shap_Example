@@ -1,0 +1,13 @@
+{
+  "version": 2,
+  "dgSpecHash": "zuShcj0PBq608b+B/QpEU6xXyE66P6PCX/sUrXgCLBlc118c2Goo3YDeDyuLddpdtesHUVEvllQ1W0l2xglvfA==",
+  "success": true,
+  "projectFilePath": "E:\\C_Sharp_Devops\\C_Shap_Example\\A基本與進階觀念\\A基本觀念\\A基本觀念.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\e4913\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\6.0.21\\microsoft.windowsdesktop.app.ref.6.0.21.nupkg.sha512",
+    "C:\\Users\\e4913\\.nuget\\packages\\microsoft.netcore.app.ref\\6.0.21\\microsoft.netcore.app.ref.6.0.21.nupkg.sha512",
+    "C:\\Users\\e4913\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\6.0.21\\microsoft.aspnetcore.app.ref.6.0.21.nupkg.sha512",
+    "C:\\Users\\e4913\\.nuget\\packages\\microsoft.netcore.app.host.win-x86\\6.0.21\\microsoft.netcore.app.host.win-x86.6.0.21.nupkg.sha512"
+  ],
+  "logs": []
+}
