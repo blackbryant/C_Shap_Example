@@ -5,7 +5,7 @@
     <TargetFramework>net6.0</TargetFramework>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
-    <StartupObject>A基本觀念.委派類型架構</StartupObject>
+    <StartupObject>A基本觀念.泛型與集合.GenericsConsole</StartupObject>
   </PropertyGroup>
 
 </Project>
