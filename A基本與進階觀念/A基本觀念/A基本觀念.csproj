@@ -5,7 +5,7 @@
     <TargetFramework>net6.0</TargetFramework>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
-    <StartupObject>A基本觀念.泛型與集合.GenericsConsole</StartupObject>
+    <StartupObject>A基本觀念.LINQ範例.LINQ範例02_類別擴充方法</StartupObject>
   </PropertyGroup>
 
 </Project>
