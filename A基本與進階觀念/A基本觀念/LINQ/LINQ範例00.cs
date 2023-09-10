@@ -8,7 +8,7 @@ using System.Xml.Linq;
 
 
 /*
- * 複習委託
+ * 由委託到LINQ標準 
  * 
  */ 
 namespace A基本觀念.LINQ範例
