@@ -14,7 +14,7 @@ using System.Threading.Tasks;
  *  AttributeTargets: 為枚舉，用來限制止能修飾甚麼資料類型，Ex:AttributeTargets.Class 只能修飾類，複選則用 | 分開
  * 
  * 2. 常見特性有:    MVC Filter , ORM table key display
- * 
+ * 3. 應用通常沒有再破壞封裝的狀況下，額外加信息與功能
  */
 namespace A基本觀念.Attribute特性範例
 {
