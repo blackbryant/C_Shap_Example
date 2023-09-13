@@ -6,7 +6,14 @@ using System.Threading.Tasks;
 
 namespace A基本觀念.序列化範例
 {
-    public  class SerializeEx00
+    public interface IIterator<T>
     {
+        T Current { get; }
+
+        bool MoveNext();
+
+        void Reset();
+
+        public IIterator<T> GetEnumerator(); 
     }
 }
