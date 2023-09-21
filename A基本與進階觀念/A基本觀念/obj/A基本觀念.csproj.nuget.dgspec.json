@@ -1,31 +1,36 @@
 {
   "format": 1,
   "restore": {
-    "/Users/bryantlin/Documents/C_Shap_Example/A基本與進階觀念/A基本觀念/A基本觀念.csproj": {}
+    "E:\\C_Sharp_Devops\\C_Shap_Example\\A基本與進階觀念\\A基本觀念\\A基本觀念.csproj": {}
   },
   "projects": {
-    "/Users/bryantlin/Documents/C_Shap_Example/A基本與進階觀念/A基本觀念/A基本觀念.csproj": {
+    "E:\\C_Sharp_Devops\\C_Shap_Example\\A基本與進階觀念\\A基本觀念\\A基本觀念.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/bryantlin/Documents/C_Shap_Example/A基本與進階觀念/A基本觀念/A基本觀念.csproj",
+        "projectUniqueName": "E:\\C_Sharp_Devops\\C_Shap_Example\\A基本與進階觀念\\A基本觀念\\A基本觀念.csproj",
         "projectName": "A基本觀念",
-        "projectPath": "/Users/bryantlin/Documents/C_Shap_Example/A基本與進階觀念/A基本觀念/A基本觀念.csproj",
-        "packagesPath": "/Users/bryantlin/.nuget/packages/",
-        "outputPath": "/Users/bryantlin/Documents/C_Shap_Example/A基本與進階觀念/A基本觀念/obj/",
+        "projectPath": "E:\\C_Sharp_Devops\\C_Shap_Example\\A基本與進階觀念\\A基本觀念\\A基本觀念.csproj",
+        "packagesPath": "C:\\Users\\e4913\\.nuget\\packages\\",
+        "outputPath": "E:\\C_Sharp_Devops\\C_Shap_Example\\A基本與進階觀念\\A基本觀念\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "/Users/bryantlin/.nuget/NuGet/NuGet.Config"
+          "C:\\Users\\e4913\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
-          "net6.0"
+          "net6.0-windows"
         ],
         "sources": {
-          "/usr/local/share/dotnet/library-packs": {},
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
-          "net6.0": {
-            "targetAlias": "net6.0",
+          "net6.0-windows7.0": {
+            "targetAlias": "net6.0-windows",
             "projectReferences": {}
           }
         },
@@ -36,8 +41,18 @@
         }
       },
       "frameworks": {
-        "net6.0": {
-          "targetAlias": "net6.0",
+        "net6.0-windows7.0": {
+          "targetAlias": "net6.0-windows",
+          "dependencies": {
+            "ExpressionTreeVisualizer.UI": {
+              "target": "Package",
+              "version": "[1.7.115, )"
+            },
+            "dotnetCampus.Configurations.WPFTypeConverter": {
+              "target": "Package",
+              "version": "[1.6.11, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",
@@ -49,12 +64,30 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.AspNetCore.App.Ref",
+              "version": "[6.0.21, 6.0.21]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Host.win-x86",
+              "version": "[6.0.21, 6.0.21]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Ref",
+              "version": "[6.0.21, 6.0.21]"
+            },
+            {
+              "name": "Microsoft.WindowsDesktop.App.Ref",
+              "version": "[6.0.21, 6.0.21]"
+            }
+          ],
           "frameworkReferences": {
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/6.0.401/RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files (x86)\\dotnet\\sdk\\7.0.400\\RuntimeIdentifierGraph.json"
         }
       }
     }

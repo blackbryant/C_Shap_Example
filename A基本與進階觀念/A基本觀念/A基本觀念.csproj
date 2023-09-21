@@ -2,10 +2,10 @@
 
   <PropertyGroup>
     <OutputType>Exe</OutputType>
-    <TargetFramework>net6.0</TargetFramework>
+    <TargetFramework>net6.0-windows</TargetFramework>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
-    <StartupObject>A基本觀念.序列化範例.資料結構範例</StartupObject>
+    <StartupObject>A基本觀念.LINQ範例.表達式.表達式範例01</StartupObject>
   </PropertyGroup>
 
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
@@ -17,5 +17,11 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="反射範例\" />
+    <Folder Include="面相對象\Item\" />
+    <Folder Include="面相對象\Service\" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="dotnetCampus.Configurations.WPFTypeConverter" Version="1.6.11" />
+    <PackageReference Include="ExpressionTreeVisualizer.UI" Version="1.7.115" />
   </ItemGroup>
 </Project>
