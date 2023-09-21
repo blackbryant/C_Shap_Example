@@ -1,0 +1,16 @@
+﻿
+https://github.com/zspitz/ExpressionTreeVisualizer/blob/master/README.md
+
+This project provides a custom debugging visualizer for expression trees, that can be used while debugging with Visual Studio (on Windows). The UI contains:
+
+a graphical treeview of the expression tree structure,
+source code representation of the tree, and
+end nodes -- nodes in the tree which are not composed of other expressions: parameters, closure variables, constants and default values
+
+
+遇到的問題:
+嚴重性	程式碼	說明	專案	檔案	行	隱藏項目狀態
+錯誤	NETSDK1136	使用 Windows Forms 或 WPF，或是參考使用上述兩者的專案或套件時，目標平台必須設定為 Windows (通常透過在 TargetFramework 屬性中包含 '-windows' 來進行)。	A基本觀念	C:\Program Files (x86)\dotnet\sdk\7.0.400\Sdks\Microsoft.NET.Sdk\targets\Microsoft.NET.Sdk.DefaultItems.Shared.targets	250	
+
+
+https://blog.lindexi.com/post/%E8%BF%81%E7%A7%BB-dotnet-6-%E6%8F%90%E7%A4%BA%E5%BF%85%E9%A1%BB%E5%B0%86%E7%9B%AE%E6%A0%87%E5%B9%B3%E5%8F%B0%E8%AE%BE%E7%BD%AE%E4%B8%BA-Windows-%E5%B9%B3%E5%8F%B0.html
