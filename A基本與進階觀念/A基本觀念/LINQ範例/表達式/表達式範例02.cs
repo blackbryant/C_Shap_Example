@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Linq.Expressions;
+using System.Reflection;
 using System.Runtime;
 using System.Runtime.CompilerServices;
 using System.Text;
@@ -16,10 +17,11 @@ namespace A基本觀念.LINQ範例.表達式
 {
 
 
-    public class 表達式範例01
+    public class 表達式範例02
     {
         class Item
         {
+
             public int id;
             public string name;
             public float price;
@@ -28,8 +30,11 @@ namespace A基本觀念.LINQ範例.表達式
 
         class CopyItem
         {
+            [Mapper(Name = "id")]
             public int id;
-            public string name;
+
+            [Mapper(Name = "name")]
+            public string itemName;
             public float price;
 
         }
@@ -44,10 +49,7 @@ namespace A基本觀念.LINQ範例.表達式
             };
             
             PrintObject(item);
-            //用反射，性能比較不好
-            CopyItem copyItem  =  ConvertAnotherObj<Item, CopyItem>(item);
-            PrintObject(copyItem);
-
+        
             //使用表達式用動態建立:
 
 
@@ -68,43 +70,7 @@ namespace A基本觀念.LINQ範例.表達式
             }
         }
 
-        /// <summary>
-        /// 
-        /// </summary>
-        /// <typeparam name="TIn">有植物件</typeparam>
-        /// <typeparam name="TOut">對象物件</typeparam>
-        /// <param name="tin"></param>
-        /// <returns></returns>
-        public static TOut ConvertAnotherObj<TIn, TOut>(TIn tin) 
-        {
-            TOut tout = Activator.CreateInstance<TOut>();
-            foreach(var itemOut in tout.GetType().GetProperties()) 
-            {
-                foreach (var itemIn in tin.GetType().GetProperties()) 
-                {
-                    if (itemOut.Name.Equals(itemIn.Name))
-                    {
-                        itemOut.SetValue(tout, itemIn.GetValue(tin));
-                        break;
-                    }
-                
-                }
-            }
-
-            foreach (var itemOut in tout.GetType().GetFields())
-            {
-                foreach (var itemIn in tin.GetType().GetFields())
-                {
-                    if (itemOut.Name.Equals(itemIn.Name))
-                    {
-                        itemOut.SetValue(tout, itemIn.GetValue(tin));
-                        break;
-                    }
-
-                }
-            }
-            return tout;
-        }
+       
 
         private static Dictionary<string,object> _Dict = new Dictionary<string,object>();
 
@@ -122,11 +88,12 @@ namespace A基本觀念.LINQ範例.表達式
                     memberBindingList.Add(memberBinding);
                 }
 
-                foreach (var item in typeof(Tout).GetFields())
+                foreach (var item in typeof(Tout).GetCustomAttributes(typeof(MapperAttribute)))
                 {
-                    MemberExpression property = Expression.Field(parameterExpression, typeof(Tin).GetField(item.Name));
-                    MemberBinding memberBinding = Expression.Bind(item, property);
-                    memberBindingList.Add(memberBinding);
+                    
+
+
+
                 }
                 MemberInitExpression memberInitExpression = Expression.MemberInit(Expression.New(typeof(Tout)), memberBindingList.ToArray());
                 Expression<Func<Tin,Tout >> lambda = Expression.Lambda<Func<Tin, Tout>>(memberInitExpression, new ParameterExpression[]

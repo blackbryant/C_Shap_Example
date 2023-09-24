@@ -1,0 +1,84 @@
+<mxfile host="app.diagrams.net" modified="2023-09-23T08:01:14.215Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/117.0.0.0 Safari/537.36" etag="X_QMlkJCFPLXkt8puogg" version="21.3.7" type="device">
+  <diagram name="第 1 页" id="oL5g_USRikOiAwv-hAsX">
+    <mxGraphModel dx="1434" dy="750" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="6S58_YGd1pnWiss6_wTZ-6" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="6S58_YGd1pnWiss6_wTZ-1" target="6S58_YGd1pnWiss6_wTZ-2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="6S58_YGd1pnWiss6_wTZ-7" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="6S58_YGd1pnWiss6_wTZ-1" target="6S58_YGd1pnWiss6_wTZ-3">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="6S58_YGd1pnWiss6_wTZ-8" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.6;entryY=0.05;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="6S58_YGd1pnWiss6_wTZ-1" target="6S58_YGd1pnWiss6_wTZ-4">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="6S58_YGd1pnWiss6_wTZ-9" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1430" y="540" as="sourcePoint" />
+            <mxPoint x="1746" y="610" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="1430" y="580" />
+              <mxPoint x="1746" y="580" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="6S58_YGd1pnWiss6_wTZ-11" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.583;entryY=-0.033;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" target="6S58_YGd1pnWiss6_wTZ-5">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="474" y="99" as="sourcePoint" />
+            <mxPoint x="783.04" y="169.98000000000002" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="474" y="134" />
+              <mxPoint x="800" y="134" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="6S58_YGd1pnWiss6_wTZ-1" value="Expression" style="rounded=1;whiteSpace=wrap;html=1;fontSize=18;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
+          <mxGeometry x="414" y="40" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="6S58_YGd1pnWiss6_wTZ-18" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1012" y="930" as="targetPoint" />
+            <mxPoint x="882" y="830" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="6S58_YGd1pnWiss6_wTZ-19" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="6S58_YGd1pnWiss6_wTZ-2" target="6S58_YGd1pnWiss6_wTZ-12">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="6S58_YGd1pnWiss6_wTZ-2" value="Parameter&lt;br&gt;Expression" style="rounded=1;whiteSpace=wrap;html=1;fontSize=18;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="1">
+          <mxGeometry x="170" y="169" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="6S58_YGd1pnWiss6_wTZ-17" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="6S58_YGd1pnWiss6_wTZ-3" target="6S58_YGd1pnWiss6_wTZ-12">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="6S58_YGd1pnWiss6_wTZ-3" value="Binray&lt;br&gt;Expression" style="rounded=1;whiteSpace=wrap;html=1;fontSize=18;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="1">
+          <mxGeometry x="350" y="169" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="6S58_YGd1pnWiss6_wTZ-4" value="Method&lt;br&gt;Expression" style="rounded=1;whiteSpace=wrap;html=1;fontSize=18;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="1">
+          <mxGeometry x="534" y="169" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="6S58_YGd1pnWiss6_wTZ-5" value="Constant&lt;br&gt;Expression" style="rounded=1;whiteSpace=wrap;html=1;fontSize=18;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="1">
+          <mxGeometry x="730" y="169" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="6S58_YGd1pnWiss6_wTZ-20" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="6S58_YGd1pnWiss6_wTZ-12" target="6S58_YGd1pnWiss6_wTZ-13">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="6S58_YGd1pnWiss6_wTZ-12" value="Expression&amp;lt;Func&amp;lt;int&amp;gt;&amp;gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;fontSize=18;" vertex="1" parent="1">
+          <mxGeometry x="190" y="450" width="310" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="6S58_YGd1pnWiss6_wTZ-13" value="Func&amp;lt;int&amp;gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;fontSize=18;" vertex="1" parent="1">
+          <mxGeometry x="640" y="450" width="160" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="6S58_YGd1pnWiss6_wTZ-15" value="&amp;lt;&amp;lt;繼承&amp;gt;&amp;gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=15;" vertex="1" parent="1">
+          <mxGeometry x="710" y="109" width="90" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="6S58_YGd1pnWiss6_wTZ-21" value="&lt;h1 style=&quot;font-size: 17px;&quot;&gt;轉成lambda&lt;/h1&gt;&lt;div&gt;&lt;div&gt;Expression&amp;lt;Func&amp;lt;int, int, int&amp;gt;&amp;gt; expression = Expression.Lambda&amp;lt;Func&amp;lt;int, int, int&amp;gt;&amp;gt;&amp;nbsp;&lt;span style=&quot;background-color: initial;&quot;&gt;(add, new ParameterExpression[] {m,n });&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;" style="text;html=1;strokeColor=none;fillColor=none;spacing=5;spacingTop=-20;whiteSpace=wrap;overflow=hidden;rounded=0;fontSize=17;" vertex="1" parent="1">
+          <mxGeometry x="440" y="320" width="460" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="6S58_YGd1pnWiss6_wTZ-22" value="complie()" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=15;" vertex="1" parent="1">
+          <mxGeometry x="510" y="450" width="90" height="30" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
