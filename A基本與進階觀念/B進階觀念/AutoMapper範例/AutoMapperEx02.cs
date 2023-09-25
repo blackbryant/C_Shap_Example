@@ -8,7 +8,7 @@ using B進階觀念.AutoMapper範例.ModuleProfile;
 
 namespace B進階觀念.AutoMapper範例
 {
-    public class AutoMapperEx01
+    public class AutoMapperEx02
     {
 
         public static void Main(string[] args) 
@@ -27,11 +27,38 @@ namespace B進階觀念.AutoMapper範例
             // 差異Mappging， 對象屬性不一定互相可以匹配
             MapperConfiguration mc = new MapperConfiguration(mc => mc.AddProfile(new ModuleProfile.ModuleProfile()));
             IMapper mapper = mc.CreateMapper();
+            
             DifferentPeople dpeople = mapper.Map<DifferentPeople>(p1);
+          
             Console.WriteLine($"ID:{dpeople.PeopleId}, Name:{dpeople.PeopleName},Sex:{dpeople.PeopleSex}, Salary:{dpeople.PeopleSaralry}");
 
 
+            // 驗證:加入驗證只要有兩邊一個不符合就會拋出throw Exception
+            try
+            {
+                DifferentPeople dpeople2 = mapper.Map<DifferentPeople>(p1);
+                //開啟驗證
+                //mapper.ConfigurationProvider.AssertConfigurationIsValid();
+                Console.WriteLine($"ID:{dpeople.PeopleId}, Name:{dpeople.PeopleName},Sex:{dpeople.PeopleSex}, Salary:{dpeople.PeopleSaralry}");
+            }
+            catch(Exception ex) {
+                System.Console.WriteLine(ex.StackTrace);
+                System.Console.WriteLine(ex.ToString());
+            }
 
+            //忽略不檢查 Ignore
+
+            //忽略不驗證兩邊物件屬性的字串是否相同
+            MapperConfiguration mc02 = new MapperConfiguration(cfg => cfg.CreateMap<Person, People>(MemberList.None));
+            IMapper mapper02 = mc02.CreateMapper();
+
+            //檢查目標物件所有性是否有匹配
+            MapperConfiguration mc03 = new MapperConfiguration(cfg => cfg.CreateMap<Person, People>(MemberList.Destination));
+            IMapper mapper03 = mc03.CreateMapper();
+
+            //檢查源頭物件所有性是否有匹配
+            MapperConfiguration mc04 = new MapperConfiguration(cfg => cfg.CreateMap<Person, People>(MemberList.Source));
+            IMapper mapper04 = mc04.CreateMapper();
 
 
         }

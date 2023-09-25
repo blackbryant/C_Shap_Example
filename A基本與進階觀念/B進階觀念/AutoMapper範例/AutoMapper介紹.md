@@ -25,4 +25,9 @@ Useful with OData
 
 #範例
 1. AutoMapperEx00.cs : 單筆/多筆相同屬性的資料Mapping 、多個物件Map匹配設定、將MapperConfiguration改由Profile定義，好處分模組去定義
+
 2. AutoMapperEx01.cs : 差異Mappging， 對象屬性不一定互相可以匹配。
+
+3. AutoMapperEx02.cs :驗證分為兩邊檢查、源頭檢查、目的檢查
+
+4.AutoMapperEx04.cs :反轉映射
