@@ -30,4 +30,6 @@ Useful with OData
 
 3. AutoMapperEx02.cs :驗證分為兩邊檢查、源頭檢查、目的檢查
 
-4.AutoMapperEx04.cs :反轉映射
+4.AutoMapperEx03.cs :反轉映射、列表與數組
+
+5. AutoMapperEx04.cs :嵌套映射

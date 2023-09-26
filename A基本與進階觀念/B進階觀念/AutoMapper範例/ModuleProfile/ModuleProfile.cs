@@ -29,8 +29,14 @@ namespace B進階觀念.AutoMapper範例.ModuleProfile
             CreateMap<Order, OrderDTO>().ReverseMap();
             //CreateMap<Order, OrderDTO>(); 如果沒有加上ReverseMap的在做反轉的會出現錯誤
 
+            //AutoMapperEx03 處理繼承先處理父類別，在Include子類別
+            CreateMap<Person, People>().Include<ChildPerson, ChildPeople>();
+            //子類別可以單獨轉換
+            CreateMap<ChildPerson, ChildPeople>();
 
-
+            //嵌套映射
+            CreateMap<Order, InnerOrder>();
+            CreateMap<Customer,InnerCustomer>();    
 
 
         }
