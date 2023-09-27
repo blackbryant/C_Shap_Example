@@ -32,4 +32,6 @@ Useful with OData
 
 4.AutoMapperEx03.cs :反轉映射、列表與數組
 
-5. AutoMapperEx04.cs :嵌套映射
+5. AutoMapperEx04.cs :嵌套映射、自訂義型轉換器:就是來源物件與目的物件屬性不相同
+
+6.  AutoMapperEx04.cs : 投影例如將日期類型轉換成年、月、日
