@@ -37,9 +37,25 @@ namespace B進階觀念.AutoMapper範例
             mc2.AssertConfigurationIsValid();
 
             IMapper mapper1 = mc2.CreateMapper();
-            Person p1 = new Person() { Id = 001, Name = "Jack", Saralry = new decimal(1000.0), Birthday = new DateTime(1993, 10, 1), Sex = "M" };
-            Account account1 = mapper1.Map<Account>(p1);
+            Person p = new Person() { Id = 001, Name = "Jack", Saralry = new decimal(1000.0), Birthday = new DateTime(1993, 10, 1), Sex = "M" };
+            Account account1 = mapper1.Map<Account>(p);
             System.Console.WriteLine($"Id:{account1.Id},Name:{account1.Name}, Saralry:{account1.Saralry},Sex:{account1.Sex},Birthday:{account1.Birthday}");
+
+            //AutoMapperEx04.cs:自訂義解析器
+
+            List<People> peoples = new List<People>();
+            People p1 = new People() { Id = 001, Name = "Jack", Saralry = new decimal(1000.0), Birthday = new DateTime(1993, 10, 1), Sex = "M" };
+            People p2 = new People() { Id = 002, Name = "Mary", Saralry = new decimal(2000.0), Birthday = new DateTime(2001, 8, 1), Sex = "F" };
+            People p3 = new People() { Id = 003, Name = "Hill", Saralry = new decimal(1500.0), Birthday = new DateTime(2000, 5, 1), Sex = "M" };
+            People p4 = new People() { Id = 004, Name = "Candy", Saralry = new decimal(1700.0), Birthday = new DateTime(1995, 6, 1), Sex = "F" };
+            peoples.Add(p1);
+            peoples.Add(p2);
+            peoples.Add(p3);
+            peoples.Add(p4);
+            var result = mapper1.Map<List<People>, PeopleTotal>(peoples);
+            System.Console.WriteLine($"Saralry:{result.SalaryTotal}");
+
+
 
 
 

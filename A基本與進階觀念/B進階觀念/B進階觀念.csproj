@@ -5,7 +5,7 @@
     <TargetFramework>net6.0</TargetFramework>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
-    <StartupObject>B進階觀念.AutoMapper範例.AutoMapperEx05</StartupObject>
+    <StartupObject>B進階觀念.AutoMapper範例.AutoMapperEx06</StartupObject>
   </PropertyGroup>
 
   <ItemGroup>

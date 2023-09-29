@@ -45,6 +45,10 @@ namespace B進階觀念.AutoMapper範例.ModuleProfile
             CreateMap<decimal, int>().ConvertUsing(new String2IntTypeConverter());
             CreateMap<int, string>().ConvertUsing(new Int2StringTypeConverter());
 
+            //AutoMapperEx04:自訂義解析器
+            CreateMap<List<People>,PeopleTotal>().ForMember(dest=>dest.SalaryTotal, source=> source.MapFrom<PeopleTotalResolver>());
+
+
 
             //AutoMapperEx05:投影
             CreateMap<Person, PersonForm>().ForMember(a => a.Year, b => b.MapFrom(src => src.Birthday.Year))
@@ -52,6 +56,11 @@ namespace B進階觀念.AutoMapper範例.ModuleProfile
                                                                     .ForMember(a=> a.Day, b=> b.MapFrom(src=>src.Birthday.Day))
                 ;
 
+            //AutoMapperEx05:條件映射:當條件符合才做映射
+            CreateMap<Person, People>().ForMember(dest => dest.Sex, opt => opt.Condition(src => src.Sex.Equals("M") || src.Sex.Equals("F")));
+
+            // AutoMapperEx06:泛型轉換
+            CreateMap(typeof(TSource<>), typeof(TTarget<>));
 
 
 
