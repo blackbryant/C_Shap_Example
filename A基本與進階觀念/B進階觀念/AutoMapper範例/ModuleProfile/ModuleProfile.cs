@@ -62,6 +62,25 @@ namespace B進階觀念.AutoMapper範例.ModuleProfile
             // AutoMapperEx06:泛型轉換
             CreateMap(typeof(TSource<>), typeof(TTarget<>));
 
+            /* 如果今天為model的方式，也可以將entity -> string[]
+             AutoMapper.MapperConfiguration configuration = new AutoMapper.MapperConfiguration(cfg => cfg.CreateMap<string[], DMPData.TF_SHE_DMP_FEEDBACKRow >()
+                        .ConstructUsing(a=> data.TF_SHE_DMP_FEEDBACK.NewTF_SHE_DMP_FEEDBACKRow())
+                        .ForMember(a => a.FILENAME, b => b.MapFrom(src => src[0]))
+                        .ForMember(a => a.DOCUMENT_ID, b => b.MapFrom(src => src[1]))
+                        .ForMember(a => a.DOCUMENT_NAME, b => b.MapFrom(src => src[2]))
+                        .ForMember(a => a.EXECUTE_DATE, b => b.MapFrom(src => src[3]))
+                        .ForMember(a => a.PLAN_DATE, b => b.MapFrom(src => src[4]))
+                        .ForMember(a => a.MAINTAIN_DEPT, b => b.MapFrom(src => src[5]))
+                        .ForMember(a => a.MAINTAIN_USER, b => b.MapFrom(src => src[6]))
+                        .ForMember(a => a.VERSION, b => b.MapFrom(src => src[7]))
+                        .ForMember(a => a.FILE_LOCATION, b => b.MapFrom(src => src[8]))
+                        .ForMember(a => a.DMP_LOCATION, b => b.MapFrom(src => src[9]))
+                        .ForMember(a => a.RESULT, b => b.MapFrom(src => src[10])) 
+                        .ForMember(a => a.CREATE_DATE, b => b.MapFrom(src => src[11])));
+            IMapper mapper = configuration.CreateMapper();
+            DMPData.TF_SHE_DMP_FEEDBACKRow row =   mapper.Map<string[], DMPData.TF_SHE_DMP_FEEDBACKRow>(item);
+
+            */
 
 
         }
