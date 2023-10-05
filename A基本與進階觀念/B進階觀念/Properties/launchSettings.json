@@ -1,0 +1,13 @@
+{
+  "profiles": {
+    "B進階觀念": {
+      "commandName": "Project",
+      "launchBrowser": true,
+      "launchUrl": "api/user",
+      "environmentVariables": {
+        "ASPNETCORE_ENVIRONMENT": "Development"
+      },
+      "applicationUrl": "http://localhost:60165/"
+    }
+  }
+}

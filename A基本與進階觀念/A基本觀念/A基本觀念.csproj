@@ -20,8 +20,4 @@
     <Folder Include="面相對象\Item\" />
     <Folder Include="面相對象\Service\" />
   </ItemGroup>
-  <ItemGroup>
-    <PackageReference Include="dotnetCampus.Configurations.WPFTypeConverter" Version="1.6.11" />
-    <PackageReference Include="ExpressionTreeVisualizer.UI" Version="1.7.115" />
-  </ItemGroup>
 </Project>
