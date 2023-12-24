@@ -8,6 +8,8 @@ using System.Xml.Linq;
 
 
 /*
+ * Linq : System.Linq
+ * 
  * 由委託到LINQ標準 
  * 
  */ 
@@ -48,7 +50,7 @@ namespace A基本觀念.LINQ範例
             //Action 框架提供16個參數，沒有返回值、 泛型委託
             Action act01 = () => Console.WriteLine($"Hellow World  ");
 
-            //Func
+            //Func 框架可以有返回值和泛型委託
             Func<int> func01 = () => DateTime.Now.Day;
 
         }

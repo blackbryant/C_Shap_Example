@@ -36,6 +36,7 @@ namespace A基本觀念.LINQ範例
             var max = workItems.Max(w=>w.EndTime-w.StartTime);
             Console.WriteLine("最常加工時間:{0:%d}天,{0:%h}時,{0:%m}分,{0:%s}秒",max);
 
+
             /////Linq to Object(Enumeranble): 
 
             //1. 一般寫法
@@ -47,7 +48,11 @@ namespace A基本觀念.LINQ範例
                 Console.WriteLine($"{item.Desc}"); 
             }
 
-            //2.
+            IEnumerable<int> list1_2 = workItems.Select(item => item.Id); 
+
+
+
+            //2.where 方法
             var list2 = workItems.Where<WorkItem>(x => x.Id >= 1 && x.Id <= 5)
                         .Select(s => new
                         {
@@ -66,7 +71,15 @@ namespace A基本觀念.LINQ範例
                 Console.WriteLine($"{item.Name}");
             }
 
-            //3.建立新的var類別
+            //3.Count方法
+            var list2_2 = workItems.Count(x => x.Id >= 1 && x.Id <= 5);
+            Console.WriteLine($"count:{list2_2}");
+            //補充Any(): 至少有一筆滿足條件回傳true,沒有就返回false
+            var list2_3 = workItems.Any(x => x.Id >= 1 && x.Id <= 5);
+
+
+
+            //4.建立新的var類別
             var list3 = workItems.Where<WorkItem>(x => x.Id >= 1 && x.Id <= 5)
                       .Select(s => new
                       {
@@ -83,7 +96,7 @@ namespace A基本觀念.LINQ範例
                 Console.WriteLine($"{item.Name}");
             }
 
-            //4.group by 
+            //5.group by 
             var list4 = from item in workItems
                         where item.Id > 4
                         group item by item.CostType into sg
@@ -100,17 +113,32 @@ namespace A基本觀念.LINQ範例
             }
 
 
+            //6. 常用的方法
+            //(1) Single: 只有滿足返回值只有一筆
+            //(2) SingleOrDefault:只有滿足返回值只有一筆，不滿足條件返回默認值
+            //(3) First: 只返回第一筆資料
+            //(4) FirstOrDefault:只有滿足條件返回第一筆資料，不滿足條件返回默認值
+            ///以上方法都是針對IEnumerable接口，只要能返回IEnumerable就可以使用鏈式使用  
+            
+
 
         }
 
     }
 
+    //工作項目
     class WorkItem 
     {
+        //工作編號
         public int Id { get; set; }
+       
+        //工作內容
         public string Desc { get; set; }
+        //工作開始時間
         public DateTime StartTime { get; set; }
+        //工作結束時間
         public DateTime EndTime { get; set; }
+        //成本分類
         public string CostType { get; set; }
 
     }
