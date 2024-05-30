@@ -1,0 +1,42 @@
+### 在Visual studio 使用方便實作get、post、put、delete 等等
+### 這些可以快速除錯，開發web api
+###
+
+
+@rootUrl=http://localhost:5053
+
+GET {{rootUrl}}/WeatherForecast/GetAAA
+
+####
+
+GET {{rootUrl}}/WeatherForecast
+
+
+###
+
+POST {{rootUrl}}/WeatherForecast/PostAAA
+content-type: application/json
+
+{
+    "id":4,
+    "firstName": "Lin",
+    "lastName": "Jone"
+}
+
+###
+
+PUT {{rootUrl}}/WeatherForecast/PutAAA/3
+content-type: application/json
+
+{
+    "id":4,
+    "firstName": "Wang",
+    "lastName": "Jack"
+}
+
+###
+
+DELETE {{rootUrl}}/WeatherForecast/DeleteAAAA/3
+
+
+
